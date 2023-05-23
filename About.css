@@ -1,0 +1,177 @@
+* {
+  text-align: center;
+  vertical-align: center;
+  background-color: solid green;
+}
+
+.topnav {
+background-color: #000;
+overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: right;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color: #2b922b;
+color: white;
+}
+
+body {
+background-color: black;
+}
+
+div {
+text-align: center;
+font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.square {
+margin-top: 20px;
+width: 255px;
+height: 255px;
+border: 7px solid white;
+margin-bottom: 1px;
+}
+
+.logo {
+width: 55px;
+height: 55px;
+}
+
+.rectangle {
+width: 500px;
+height: 630px;
+border: 3px solid white;
+margin-top: 15px;
+
+}
+
+.p {
+margin-top: 150px;
+font-family: monospace;
+font-size: 45px; 
+margin-bottom: 7px;
+color: white
+}
+
+.b {
+margin-top: 150px;
+color: #2b922b;
+font-size: 45px; 
+}
+
+.center {
+justify-content: center;
+}
+
+.greeting {
+margin-top: 200px;
+font-size: 45px; 
+margin-bottom: 7px;
+color: white;
+}
+
+.func {
+font-size: 45px; 
+margin-bottom: 7px;
+color: rgb(71, 226, 250);
+}
+
+.intro {
+  padding-top: 35%;
+  padding-bottom: 20%;
+  font-family: Courier;
+  font-size: 22px;
+  color: white;
+}
+
+.awards {
+  font-family: Courier;
+  font-size: 22px;
+  color: white;
+  float: left;
+}
+
+.aboutpic {
+  margin-top: 45px;
+  width: 350px;
+  height: 350px;
+  border: 7px solid white;
+  margin-left: 100px;
+  float: left;
+}
+
+.awardspic {
+  margin-top: 400px;
+  width: 350px;
+  height: 350px;
+  border: 7px solid white;
+  margin-right: 100px;
+  float: right;
+  margin-bottom: 500px;
+}
+
+/* photo slideshow css */
+.slideshow {
+  position: relative;
+  height: 500px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  margin-top: -30px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 768px) {
+  .prev,
+  .next {
+    display: none;
+  }
+}
